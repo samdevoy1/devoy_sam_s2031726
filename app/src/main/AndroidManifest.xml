@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Devoy_sam_S2031726"
         android:usesCleartextTraffic="true">
 
-       
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="YOUR_API_KEY" />

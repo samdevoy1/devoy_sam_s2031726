@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
                 searchTab.setVisibility(View.GONE);
                 buttonBar.setVisibility(View.VISIBLE);
                 visible =0;
-            };
+            }
         }
         else if(id == R.id.searchBackButton){
             roadSearch.setText("");
@@ -278,8 +278,8 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
         int i = 0;
         while(i < sList.size())
         {
-            Boolean inList = sList.get(i).getDescription().contains(searchDate);
-            if(inList == false){
+            boolean inList = sList.get(i).getDescription().contains(searchDate);
+            if(!inList){
                 sList.remove(i);
             }
             else {

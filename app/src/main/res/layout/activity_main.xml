@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_weight="1"
-            android:text="Current Incidents"
+            android:text="@string/current_incidents"
             android:textSize="16sp" />
 
         <Button
@@ -62,7 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:layout_weight="1"
-            android:text="Planned Roadworks"
+            android:text="@string/planned_roadworks"
             android:textSize="16sp" />
 
         <Button
@@ -70,56 +70,52 @@
             android:layout_width="match_parent"
             android:layout_height="63dp"
             android:layout_weight="1"
-            android:text="Current Roadworks"
+            android:text="@string/current_roadworks"
             android:textSize="16sp" />
 
     </LinearLayout>
 
     <!--Search Bar-->
     <LinearLayout
+        android:id="@+id/searchTab"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:id="@+id/searchTab"
+        <EditText
+            android:id="@+id/roadSearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:hint="@string/please_enter_road"
+            android:inputType="text"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/light_grey"
+            android:textColorHint="@color/light_grey"
+            android:textSize="30sp" />
 
-            <EditText
-                android:id="@+id/roadSearch"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Please enter road"
-                android:selectAllOnFocus="false"
-                android:singleLine="true"
-                android:textAllCaps="false"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:textColor="@color/light_grey"
-                android:textColorHint="@color/light_grey"
-                android:textSize="30sp" />
+        <Button
+            android:id="@+id/searchRoadButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/search_road" />
 
-            <Button
-                android:id="@+id/searchRoadButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Search Road" />
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"/>
 
-            <DatePicker
-                android:id="@+id/datePicker"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:datePickerMode="spinner"
-                android:calendarViewShown="false"/>
+        <Button
+            android:id="@+id/searchDateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search_date"/>
 
-            <Button
-                android:id="@+id/searchDateButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Search Date"/>
-        </LinearLayout>
     </LinearLayout>
 
     <!--Loading Feed-->

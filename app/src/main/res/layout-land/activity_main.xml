@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Current Incidents"
+            android:text="@string/current_incidents"
             android:textSize="16sp" />
 
         <Button
@@ -62,7 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Planned Roadworks"
+            android:text="@string/planned_roadworks"
             android:textSize="16sp" />
 
         <Button
@@ -70,7 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Current Roadworks"
+            android:text="@string/current_roadworks"
             android:textSize="16sp" />
 
     </LinearLayout>
@@ -92,7 +92,8 @@
                 android:id="@+id/roadSearch"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Please enter road"
+                android:hint="@string/please_enter_road"
+                android:inputType="text"
                 android:selectAllOnFocus="false"
                 android:singleLine="true"
                 android:textAllCaps="false"
@@ -105,7 +106,7 @@
                 android:id="@+id/searchRoadButton"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:text="Search" />
+                android:text="@string/search" />
 
         </LinearLayout>
 
@@ -128,7 +129,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight=".3"
-                android:text="Search Date" />
+                android:text="@string/search_date" />
 
         </LinearLayout>
 
@@ -139,7 +140,7 @@
         android:id="@+id/loadingText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textColor="@color/light_grey"
         />
 
@@ -155,7 +156,7 @@
             android:layout_height="match_parent"
             android:cacheColorHint="@color/white"
             android:divider="@color/azure"
-            android:dividerHeight="4px"></ListView>
+            android:dividerHeight="4dp"></ListView>
     </ScrollView>
 
 

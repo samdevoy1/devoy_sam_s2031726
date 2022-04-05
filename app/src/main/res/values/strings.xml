@@ -2,4 +2,16 @@
     <string name="app_name">Traffic Scotland</string>
     <string name="Menu">Menu</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="current_incidents">Current Incidents</string>
+    <string name="planned_roadworks">Planned Roadworks</string>
+    <string name="current_roadworks">Current Roadworks</string>
+    <string name="please_enter_road">Please enter road</string>
+    <string name="search">Search</string>
+    <string name="search_date">Search Date</string>
+    <string name="current_incidents">Current Incidents</string>
+    <string name="current_roadworks">Current Roadworks</string>
+    <string name="planned_roadworks">Planned Roadworks</string>
+    <string name="please_enter_road">Please enter road</string>
+    <string name="search_road">Search Road</string>
+    <string name="search_date">Search Date</string>
 </resources>
