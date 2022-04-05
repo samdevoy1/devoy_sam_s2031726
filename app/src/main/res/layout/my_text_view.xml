@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/roadworkTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:gravity="center"
+        android:textColor="@color/light_grey"
+        android:paddingTop="600dp"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:background="@color/purple_500"
+        />
+
+    <TextView
+        android:id="@+id/roadworkDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:textColor="@color/light_grey"
+        android:paddingTop="600dp"
+        android:textSize="20sp"
+        />
+
+
+</LinearLayout>
