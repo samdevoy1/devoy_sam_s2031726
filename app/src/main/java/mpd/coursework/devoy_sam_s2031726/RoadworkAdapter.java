@@ -12,17 +12,21 @@ import androidx.annotation.NonNull;
 
 import java.util.ArrayList;
 
+//custom array adapter class
 public class RoadworkAdapter extends ArrayAdapter<Roadwork> {
+
 
     private Context rContext;
     private ArrayList<Roadwork> rList = new ArrayList<>();
 
+    //consturcter accepting array list and contect from main activity
     public RoadworkAdapter(@NonNull Context context, ArrayList<Roadwork> list){
         super(context,0, list);
         rContext = context;
         rList = list;
     }
 
+    //populating custom array addapter from the roadwork class values from arraylist of roadworks
     @Override
     public View getView(int position, View convertView, ViewGroup parent){
         View listItem = convertView;
